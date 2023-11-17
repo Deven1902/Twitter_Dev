@@ -2,16 +2,37 @@ const express = require('express');
 const connect = require('./config/database');
 const app = express();
 
-const Tweet = require('./models/tweet');
+// const Tweet = require('./models/tweet');
+// const HashtagRepository = require('./repository/hashtag-repository');
+// const Hashtag = require('./models/hashtags'); 
+
 app.listen(3000, async() => {
     console.log('Server is running on port 3000');
 
     await connect();
     console.log('MongoDB connected');
 
-    const tweets = await Tweet.find({
-        content: ["12345678"]
-
-    });
-    console.log(tweets);
+    // let repo = new HashtagRepository();
+    // await repo.bulkCreate([
+    //     {
+    //         title: 'Trend1',
+    //         tweets: []
+    //     },
+    //     {
+    //         title: 'Trend2',
+    //         tweets: []
+    //     },
+    //     {
+    //         title: 'Trend3',
+    //         tweets: []
+    //     },
+    //     {
+    //         title: 'Trend4',
+    //         tweets: []
+    //     },
+    //     {
+    //         title: 'Trend5',
+    //         tweets: []
+    //     }
+    // ])
 })
