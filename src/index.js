@@ -1,5 +1,6 @@
-const express = require('express');
-const connect = require('./config/database');
+import express from 'express';
+import { connect } from './config/database.js';
+
 const app = express();
 
 // const Tweet = require('./models/tweet');
