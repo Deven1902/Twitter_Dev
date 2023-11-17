@@ -13,6 +13,9 @@ app.listen(3000, async() => {
     await connect();
     console.log('MongoDB connected');
 
+    // let ser = new service();
+    // await ser.create({content: 'Done with #refactor ?'})
+
     // let repo = new HashtagRepository();
     // await repo.bulkCreate([
     //     {

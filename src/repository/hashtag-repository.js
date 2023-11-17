@@ -1,4 +1,4 @@
-import Hashtag from './../models/hashtags';
+import Hashtag from '../models/hashtags.js';
 
 class HashtagRepository {
 
