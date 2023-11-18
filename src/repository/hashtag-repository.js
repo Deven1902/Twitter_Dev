@@ -1,7 +1,6 @@
 import Hashtag from '../models/hashtags.js';
-
 class HashtagRepository {
-
+    
     async create(data) {
         try {
             const tag = await Hashtag.create(data);

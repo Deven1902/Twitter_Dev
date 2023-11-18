@@ -1,6 +1,4 @@
-// import { TweetRepository, HashtagRepository  } from '../repository/index.js';
-import TweetRepository from './../repository/tweet-repository';
-import HashtagRepository from './../repository/hashtag-repository';
+import { TweetRepository, HashtagRepository } from '../repository/index.js'
 
 class TweetService {
     constructor() {
@@ -28,4 +26,9 @@ class TweetService {
         return tweet;
     }
 }
+
 export default TweetService;
+
+/*
+    this is my #first #tweet . I am really #excited
+*/
